@@ -11,7 +11,7 @@ function countOfWorkingDays(dateEarlier, dateLater) {
         if (actualDay > 0 && actualDay < 6) {
             count++;
         }
-        earlier.setDay(actualDay + 1);
+        earlier.setDate(earlier.getDate() + 1);
     }
     return count;
 }
